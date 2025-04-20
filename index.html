@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery</title>
+    <link rel="stylesheet" href="style.css" class="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <script>
+            // Listen to the scroll event
+            window.addEventListener('scroll', function () {
+            const header = document.querySelector('.navbar');
+            if (window.scrollY > 50) {  // Adjust threshold as needed
+            if (!header.classList.contains('sticky')) {
+            header.classList.add('sticky');  // Add sticky class when scrolled
+            }
+            } else {
+            if (header.classList.contains('sticky')) {
+            header.classList.remove('sticky');  // Remove sticky class when back to top
+                  }
+                }
+            });
+        </script>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/green-logo.png" alt="">
+                Recovery.com
+            </div>
+            <div class="search-bar">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search..." />
+                </div>
+            </div>
+            <div class="main-menu">
+                <ul class="navbar1">
+                <li class="item1"><a href="#">Addiction
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                </li>
+                <li class="item2"><a href="#">Mental Health
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                </li>
+                <li class="item3"><a href="#">About Us
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+                </li>
+                <li>
+                    <a href="#"><i class="far fa-heart heart-icon"></i></a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <div class="box-main">
+        <div class="container">
+            <div class="box2">
+                <div class="info">
+                    <div class="box1">
+                        <div class="menu1">
+                                <ul>
+                                <li><a href="#">All Centers</a></li>
+                                <li><a href="#"><i class="fa-solid fa-greater-than"></i></a></li>
+                                <li><a href="#">United States</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="menu2">
+                        <ul>
+                        <li class="heading1"><a href="#">Drug and Alcohol Rehabs in United States</a></li>
+                        <li class="heading2"><a href="#">The best rehab is one that meets your needs. 
+                            Our research team evaluated 16759 alcohol and drug rehabs in United States. 
+                            Review our curated list of rehab centers providing detox, 
+                            residential, and outpatient treatment. 
+                            Insurance covers rehab for addiction, making recovery more accessible and affordable.</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pic">
+                    <ul>
+                        <img src="images/img1.jpeg" alt="">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="container">
+            <div class="listing-card">
+                <div class="image-slider">
+                    <div class="slider-wrapper">
+                            <div class="main-badge">
+                                <span class="badge">Residential</span>
+                            </div>
+                        <button class="arrow-btn left" onclick="scrollImages(-1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                            <div class="image-container" class="imageSlider" id="imageSlider1">
+                                <img src="images/img1-1.webp" alt="">
+                                <img src="images/img2.jpeg" alt="">
+                                <img src="images/img3.jpeg" alt="">
+                                <img src="images/img4.jpeg" alt="">
+                                <img src="images/img5.webp" alt="">
+                                <img src="images/img6.webp" alt="">
+                                <img src="images/img7.webp" alt="">
+                                <img src="images/img8.webp" alt="">
+                            </div>
+                        <button class="arrow-btn right" onclick="scrollImages(1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div> 
+                        <script>
+                            function scrollImages(direction)
+                            {
+                                const container = document.getElementById('imageSlider1');
+                                const scrollAmount = 500; // Adjust based on image width + gap
+                                container.scrollBy({
+                                left: direction * scrollAmount,
+                                behavior: 'smooth'
+                                });
+                            }
+                        </script>
+                <div class="card-content">
+                        <h4>Delray Beach, Florida, United States</h4>
+                        <h2>Immersion Recovery Center <i class="fa-solid fa-circle-check verified"></i></h2>
+                    <div class="rating">
+                        <span><i class="fa-solid fa-star"></i> 5.9</span>
+                        <span>216</span>
+                        <span class="pill"></i> Joint Commission Accredited</span>
+                        <span class="pill green"><i class="fa-solid fa-shield-check"></i> Insurance Accepted</span>
+                    </div> 
+                    <div class="tags">
+                        <span>Substance Use</span>
+                        <span>Alcohol</span>
+                        <span>Drug Addiction</span>
+                        <span>Executives</span>
+                        <span>Opioids</span>
+                        <span>Prescription Drugs</span>
+                    </div>
+                        <p class="desc">A full continuum of care treating addiction and mental health through an evidence-based approach, relapse prevention, and holistic healing with beach activities...</p>
+                    <div class="features">
+                        <span><i class="fa-solid fa-briefcase"></i> Perfect for Professionals</span>
+                        <span><i class="fa-solid fa-car"></i> Medically Assisted Detox</span>
+                        <span><i class="fa-solid fa-user-shield"></i> Certified Professionals</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn view">View</button>
+                        <button class="btn message">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-section">
+    <div class="container">
+        <div class="listing-card">
+            <div class="image-slider">
+                <div class="slider-wrapper">
+                    <div class="main-badge">
+                        <span class="badge">Residential</span>
+                    </div>
+                    <button class="arrow-btn left" onclick="scrollImages(-1)">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="image-container" class="imageSlider" id="imageSlider1">
+                        <img src="images/capo1.webp" alt="">
+                        <img src="images/capo2.jpeg" alt="">
+                        <img src="images/capo3.jpeg" alt="">
+                        <!-- Add more images as needed -->
+                    </div>
+                    <button class="arrow-btn right" onclick="scrollImages(1)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div> 
+            <script>
+                function scrollImages(direction) {
+                    const container = document.getElementById('imageSlider1');
+                    const scrollAmount = 500;
+                    container.scrollBy({
+                        left: direction * scrollAmount,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+
+            <div class="card-content">
+                <h4>San Juan Capistrano, California, United States</h4>
+                <h2>Capo Canyon <i class="fa-solid fa-circle-check verified"></i></h2>
+                <div class="rating">
+                    <span><i class="fa-solid fa-star"></i> 5.0</span>
+                    <span>32</span>
+                    <span class="pill"><i class="fa-solid fa-award"></i> Joint Commission Accredited</span>
+                    <span class="pill green"><i class="fa-solid fa-shield-check"></i> Insurance Accepted</span>
+                </div> 
+                <div class="tags">
+                    <span>Substance Use</span>
+                    <span>Co-Occurring Mental Health</span>
+                    <span>Alcohol</span>
+                    <span>Anxiety</span>
+                    <span>Depression</span>
+                    <span>Executives</span>
+                    <span>Flexible technology policies</span>
+                </div>
+                <p class="desc">
+                    Capo Canyon is a private, luxury rehab designed with executives and professionals in mind. 
+                    This center does not accept Medicaid and Medicare...
+                </p>
+                <div class="features">
+                    <span><i class="fa-solid fa-briefcase"></i> Perfect for Professionals</span>
+                    <span><i class="fa-solid fa-bed"></i> Private Rooms Only</span>
+                    <span><i class="fa-solid fa-laptop-code"></i> Tech Friendly</span>
+                </div>
+                <div class="actions">
+                    <button class="btn view">View</button>
+                    <button class="btn message">Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="main-section">
+        <div class="container">
+            <div class="listing-card">
+                <div class="image-slider">
+                    <div class="slider-wrapper">
+                            <div class="main-badge">
+                                <span class="badge">Residential</span>
+                            </div>
+                        <button class="arrow-btn left" onclick="scrollImages(-1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                            <div class="image-container" class="imageSlider" id="imageSlider2">
+                                <img src="images/img1-1.webp" alt="">
+                                <img src="images/img2.jpeg" alt="">
+                                <img src="images/img3.jpeg" alt="">
+                                <img src="images/img4.jpeg" alt="">
+                                <img src="images/img5.webp" alt="">
+                                <img src="images/img6.webp" alt="">
+                                <img src="images/img7.webp" alt="">
+                                <img src="images/img8.webp" alt="">
+                            </div>
+                        <button class="arrow-btn right" onclick="scrollImages(1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div> 
+                        <script>
+                            function scrollImages(direction)
+                            {
+                                const container = document.getElementById('imageSlider2');
+                                const scrollAmount = 220; // Adjust based on image width + gap
+                                container.scrollBy({
+                                left: direction * scrollAmount,
+                                behavior: 'smooth'
+                                });
+                            }
+                        </script>
+                <div class="card-content">
+                        <h4>Delray Beach, Florida, United States</h4>
+                        <h2>Immersion Recovery Center <i class="fa-solid fa-circle-check verified"></i></h2>
+                    <div class="rating">
+                        <span><i class="fa-solid fa-star"></i> 5.9</span>
+                        <span>216</span>
+                        <span class="pill"></i> Joint Commission Accredited</span>
+                        <span class="pill green"><i class="fa-solid fa-shield-check"></i> Insurance Accepted</span>
+                    </div> 
+                    <div class="tags">
+                        <span>Substance Use</span>
+                        <span>Alcohol</span>
+                        <span>Drug Addiction</span>
+                        <span>Executives</span>
+                        <span>Opioids</span>
+                        <span>Prescription Drugs</span>
+                    </div>
+                        <p class="desc">A full continuum of care treating addiction and mental health through an evidence-based approach, relapse prevention, and holistic healing with beach activities...</p>
+                    <div class="features">
+                        <span><i class="fa-solid fa-briefcase"></i> Perfect for Professionals</span>
+                        <span><i class="fa-solid fa-car"></i> Medically Assisted Detox</span>
+                        <span><i class="fa-solid fa-user-shield"></i> Certified Professionals</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn view">View</button>
+                        <button class="btn message">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="main-section">
+        <div class="container">
+            <div class="listing-card">
+                <div class="image-slider">
+                    <div class="slider-wrapper">
+                            <div class="main-badge">
+                                <span class="badge">Residential</span>
+                            </div>
+                        <button class="arrow-btn left" onclick="scrollImages(-1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                            <div class="image-container" class="imageSlider" id="imageSlider1">
+                                <img src="images/img1-1.webp" alt="">
+                                <img src="images/img2.jpeg" alt="">
+                                <img src="images/img3.jpeg" alt="">
+                                <img src="images/img4.jpeg" alt="">
+                                <img src="images/img5.webp" alt="">
+                                <img src="images/img6.webp" alt="">
+                                <img src="images/img7.webp" alt="">
+                                <img src="images/img8.webp" alt="">
+                            </div>
+                        <button class="arrow-btn right" onclick="scrollImages(1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div> 
+                        <script>
+                            function scrollImages(direction)
+                            {
+                                const container = document.getElementById('imageSlider1');
+                                const scrollAmount = 220; // Adjust based on image width + gap
+                                container.scrollBy({
+                                left: direction * scrollAmount,
+                                behavior: 'smooth'
+                                });
+                            }
+                        </script>
+                <div class="card-content">
+                        <h4>Delray Beach, Florida, United States</h4>
+                        <h2>Immersion Recovery Center <i class="fa-solid fa-circle-check verified"></i></h2>
+                    <div class="rating">
+                        <span><i class="fa-solid fa-star"></i> 5.9</span>
+                        <span>216</span>
+                        <span class="pill"></i> Joint Commission Accredited</span>
+                        <span class="pill green"><i class="fa-solid fa-shield-check"></i> Insurance Accepted</span>
+                    </div> 
+                    <div class="tags">
+                        <span>Substance Use</span>
+                        <span>Alcohol</span>
+                        <span>Drug Addiction</span>
+                        <span>Executives</span>
+                        <span>Opioids</span>
+                        <span>Prescription Drugs</span>
+                    </div>
+                        <p class="desc">A full continuum of care treating addiction and mental health through an evidence-based approach, relapse prevention, and holistic healing with beach activities...</p>
+                    <div class="features">
+                        <span><i class="fa-solid fa-briefcase"></i> Perfect for Professionals</span>
+                        <span><i class="fa-solid fa-car"></i> Medically Assisted Detox</span>
+                        <span><i class="fa-solid fa-user-shield"></i> Certified Professionals</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn view">View</button>
+                        <button class="btn message">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="main-section">
+        <div class="container">
+            <div class="listing-card">
+                <div class="image-slider">
+                    <div class="slider-wrapper">
+                            <div class="main-badge">
+                                <span class="badge">Residential</span>
+                            </div>
+                        <button class="arrow-btn left" onclick="scrollImages(-1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                            <div class="image-container" class="imageSlider" id="imageSlider1">
+                                <img src="images/img1-1.webp" alt="">
+                                <img src="images/img2.jpeg" alt="">
+                                <img src="images/img3.jpeg" alt="">
+                                <img src="images/img4.jpeg" alt="">
+                                <img src="images/img5.webp" alt="">
+                                <img src="images/img6.webp" alt="">
+                                <img src="images/img7.webp" alt="">
+                                <img src="images/img8.webp" alt="">
+                            </div>
+                        <button class="arrow-btn right" onclick="scrollImages(1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div> 
+                        <script>
+                            function scrollImages(direction)
+                            {
+                                const container = document.getElementById('imageSlider1');
+                                const scrollAmount = 220; // Adjust based on image width + gap
+                                container.scrollBy({
+                                left: direction * scrollAmount,
+                                behavior: 'smooth'
+                                });
+                            }
+                        </script>
+                <div class="card-content">
+                        <h4>Delray Beach, Florida, United States</h4>
+                        <h2>Immersion Recovery Center <i class="fa-solid fa-circle-check verified"></i></h2>
+                    <div class="rating">
+                        <span><i class="fa-solid fa-star"></i> 5.9</span>
+                        <span>216</span>
+                        <span class="pill"></i> Joint Commission Accredited</span>
+                        <span class="pill green"><i class="fa-solid fa-shield-check"></i> Insurance Accepted</span>
+                    </div> 
+                    <div class="tags">
+                        <span>Substance Use</span>
+                        <span>Alcohol</span>
+                        <span>Drug Addiction</span>
+                        <span>Executives</span>
+                        <span>Opioids</span>
+                        <span>Prescription Drugs</span>
+                    </div>
+                        <p class="desc">A full continuum of care treating addiction and mental health through an evidence-based approach, relapse prevention, and holistic healing with beach activities...</p>
+                    <div class="features">
+                        <span><i class="fa-solid fa-briefcase"></i> Perfect for Professionals</span>
+                        <span><i class="fa-solid fa-car"></i> Medically Assisted Detox</span>
+                        <span><i class="fa-solid fa-user-shield"></i> Certified Professionals</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn view">View</button>
+                        <button class="btn message">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="main-section">
+        <div class="container">
+            <div class="listing-card">
+                <div class="image-slider">
+                    <div class="slider-wrapper">
+                            <div class="main-badge">
+                                <span class="badge">Residential</span>
+                            </div>
+                        <button class="arrow-btn left" onclick="scrollImages(-1)">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                            <div class="image-container" class="imageSlider" id="imageSlider1">
+                                <img src="images/img1-1.webp" alt="">
+                                <img src="images/img2.jpeg" alt="">
+                                <img src="images/img3.jpeg" alt="">
+                                <img src="images/img4.jpeg" alt="">
+                                <img src="images/img5.webp" alt="">
+                                <img src="images/img6.webp" alt="">
+                                <img src="images/img7.webp" alt="">
+                                <img src="images/img8.webp" alt="">
+                            </div>
+                        <button class="arrow-btn right" onclick="scrollImages(1)">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div> 
+                        <script>
+                            function scrollImages(direction)
+                            {
+                                const container = document.getElementById('imageSlider1');
+                                const scrollAmount = 220; // Adjust based on image width + gap
+                                container.scrollBy({
+                                left: direction * scrollAmount,
+                                behavior: 'smooth'
+                                });
+                            }
+                        </script>
+                <div class="card-content">
+                        <h4>Delray Beach, Florida, United States</h4>
+                        <h2>Immersion Recovery Center <i class="fa-solid fa-circle-check verified"></i></h2>
+                    <div class="rating">
+                        <span><i class="fa-solid fa-star"></i> 5.9</span>
+                        <span>216</span>
+                        <span class="pill"></i> Joint Commission Accredited</span>
+                        <span class="pill green"><i class="fa-solid fa-shield-check"></i> Insurance Accepted</span>
+                    </div> 
+                    <div class="tags">
+                        <span>Substance Use</span>
+                        <span>Alcohol</span>
+                        <span>Drug Addiction</span>
+                        <span>Executives</span>
+                        <span>Opioids</span>
+                        <span>Prescription Drugs</span>
+                    </div>
+                        <p class="desc">A full continuum of care treating addiction and mental health through an evidence-based approach, relapse prevention, and holistic healing with beach activities...</p>
+                    <div class="features">
+                        <span><i class="fa-solid fa-briefcase"></i> Perfect for Professionals</span>
+                        <span><i class="fa-solid fa-car"></i> Medically Assisted Detox</span>
+                        <span><i class="fa-solid fa-user-shield"></i> Certified Professionals</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn view">View</button>
+                        <button class="btn message">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="more-section1">
+     <div class="container">
+            <section class="learn-more-section">
+  <h2>Learn More</h2>
+  <ul class="learn-list">
+    <li><a href="#"><i class="fa fa-link"></i> How to Get Into Rehab Immediately <span>&#8250;</span></a></li>
+    <li><a href="#"><i class="fa fa-link"></i> How to Pay for Drug and Alcohol Rehab <span>&#8250;</span></a></li>
+    <li><a href="#"><i class="fa fa-link"></i> How Do I Know If I Have a Drug Problem <span>&#8250;</span></a></li>
+    <li><a href="#"><i class="fa fa-link"></i> Is Alcohol Considered a Drug? <span>&#8250;</span></a></li>
+  </ul>
+</section>
+
+<section class="destinations">
+  <h2>Explore Top Treatment Destinations</h2>
+  <p class="subtitle">
+    Residential rehab offers you or your loved one the opportunity to start anew in a setting tailored to your needs.
+    With a variety of available options, one is sure to be perfect for you.
+  </p>
+  <div class="destination-cards">
+    <div class="card">
+      <div class="card-img" style="background-image: url('main-img/2.jpeg')">
+        <i class="fa fa-play-circle play-icon"></i>
+      </div>
+      <h3>Arizona</h3>
+      <p>Enjoy beautiful natural scenery and treatment from experienced providers.</p>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('main-img/1.jpeg')">
+        <i class="fa fa-play-circle play-icon"></i>
+      </div>
+      <h3>Colorado</h3>
+      <p>Experience quality treatment with awe-inspiring views in naturally beautiful settings.</p>
+    </div>
+    <div class="card">
+      <div class="card-img" style="background-image: url('main-img/3.jpeg')">
+        <i class="fa fa-play-circle play-icon"></i>
+      </div>
+      <h3>Florida</h3>
+      <p>Sunshine, beaches, and warm climate attract clients seeking treatment through wellness and rejuvenation.</p>
+    </div>
+  </div>
+</section>
+    </div>
+   </div>
+    <footer class="site-footer">
+        <div class="container">
+              <div class="footer-container">
+    <div class="footer-column">
+      <h4>Not Sure Where to Go?</h4>
+      <ul>
+        <li><a href="#">Rehabs in Florida</a></li>
+        <li><a href="#">Rehabs in California</a></li>
+        <li><a href="#">Rehabs in New York</a></li>
+        <li><a href="#">Rehabs in Texas</a></li>
+        <li><a href="#">Rehabs in Arizona</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Popular Centers</h4>
+      <ul>
+        <li><a href="#">Luxury Rehab Centers</a></li>
+        <li><a href="#">Detox Centers</a></li>
+        <li><a href="#">Cognitive Behavioral Therapy</a></li>
+        <li><a href="#">Sober Living Homes</a></li>
+        <li><a href="#">LGBTQ+ Friendly Rehabs</a></li>
+        <li><a href="#">Wellness Centers</a></li>
+        <li><a href="#">Pet Friendly Rehabs</a></li>
+        <li><a href="#">Rehabs that Allow Cell Phones</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Top Specializations</h4>
+      <ul>
+        <li><a href="#">Eating Disorder Treatment</a></li>
+        <li><a href="#">Depression Treatment</a></li>
+        <li><a href="#">Executive Rehab</a></li>
+        <li><a href="#">Teen Rehab Centers</a></li>
+        <li><a href="#">Dual Diagnosis Rehabs</a></li>
+        <li><a href="#">Residential Trauma Treatment</a></li>
+        <li><a href="#">Sex Addiction Treatment</a></li>
+        <li><a href="#">Christian Treatment Centers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Top Resources</h4>
+      <ul>
+        <li><a href="#">Can I Get Fired for Going to Rehab?</a></li>
+        <li><a href="#">Is Rehab Covered by Insurance?</a></li>
+        <li><a href="#">Tips for Staging an Intervention</a></li>
+        <li><a href="#">How Much Does Rehab Cost?</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>For Treatment Providers</h4>
+      <ul>
+        <li><a href="#">Claim Your Rehab Center</a></li>
+        <li><a href="#">Explore Marketing Solutions</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-logo">
+         <div class="main-logo"><img src="images/logo-purple.png" alt=""></div> Recovery.com</div>
+    <div class="footer-links">
+      © 2017–2025 
+      <a href="#">RehabPath Inc</a> <a href="#"> · </a> 
+      <a href="#">Careers</a>  <a href="#"> · </a>
+      <a href="#">News</a> <a href="#"> · </a>
+      <a href="#">Privacy Policy</a>  <a href="#"> · </a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+                  
+                    
+                 
+
